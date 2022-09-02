@@ -74,6 +74,10 @@ nav.navigation-container.scrolled {
     line-height: 1;
     cursor: pointer;
     display: inline-block;
+    transition: all .2s ease-in-out;
+}
+.nav-menu ul li a:hover{
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
 }
 .nav-menu {
     display: flex;
@@ -107,10 +111,11 @@ nav.navigation-container.scrolled {
     letter-spacing: 2px;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .email-address a:hover {
     color: #ccd6f6;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
 }
 i {
     font-style: unset;
@@ -131,11 +136,12 @@ i {
     flex-direction: column;
 }
 .socials a{
-    transition: all .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     padding-top: 15px;
 }
 .socials a:hover{
     transform: translateY(-3px);
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
 }
 .socials a:hover i:before{
     color: #ccd6f6;
