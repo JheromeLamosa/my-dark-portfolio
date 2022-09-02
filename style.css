@@ -39,7 +39,7 @@ section {
     margin: auto;
 }
 nav.navigation-container {
-    background-color: transparent;
+    background-color: #0A192F;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
