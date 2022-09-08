@@ -343,7 +343,14 @@ a:hover {
 .side-bar-menu.show-side-bar {
     transform: translatex(0%)!important;
 }
-
+.side-bar-menu .navbar-nav .nav-link {
+    font-size: 25px;
+    color: #ccd6f6;
+    font-weight: bold;
+}
+.side-bar-menu .email-mobile-side-bar {
+    font-size: 18px;
+}
 
 /* Mobile Responsivenes */
 @media only screen and (max-width: 980px) {
@@ -396,6 +403,7 @@ a:hover {
         width: 100%;
     }
     .side-bar-menu .gen-button-style a {
+        margin-top: 20px;
         margin-bottom: 100px;
     }
     .floaters-after {
