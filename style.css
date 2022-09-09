@@ -278,10 +278,10 @@ a:hover {
 
 /* webite screenshots */
 .vertere .project-img-container {
-    background-image: url(../img/vertere-gs.jpg);
+    background-image: url("/img/vertere-gs.jpg");
 }
 .utsfp .project-img-container {
-    background-image: url(../img/usaptayosafp.jpg);
+    background-image: url("/img/usaptayosafp.jpg");
 }
 
 .project-img-container:hover {
