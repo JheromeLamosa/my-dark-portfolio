@@ -38,5 +38,18 @@ jQuery(document).ready(function($) {
   }
   lastScrollTop = st;
   });	
+
+
+
+
+  $('.works-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
+
+
 });
+
 

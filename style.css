@@ -29,13 +29,18 @@ h1 {
 }
 
 section {
+    background-color: #0A192F;
+    padding: 180px 30px;
+}
+#main-banner {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .row {
-    max-width: 80%;
+    max-width: 1200px;
+    width: 80%;
     margin: auto;
 }
 nav.navigation-container {
@@ -71,6 +76,8 @@ nav.navigation-container.scrolled {
     cursor: pointer;
     display: inline-block;
     transition: all .2s ease-in-out;
+    padding-right: 3.5rem!important;
+    padding-left: 0.5rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
@@ -86,6 +93,7 @@ nav.navigation-container.scrolled {
 .scrolling_up {
     transform: translateY(0px);
 }
+
 /* Floating email address */
 .email-address {
     position: fixed;
@@ -237,10 +245,133 @@ a:hover {
 
 }
 
-/* About */
-#about {
-    background-color: #64ffda;
+/* Works */
+#works h2 {
+    font-size: 32px;
+    color: #ccd6f6;
+    font-family: var(--inter);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
+.text-header h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+}
+
+.project-img-container {
+    height: 374px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    transition: 3s ease-in-out;
+    box-shadow: 0px 0px 26px 0px rgb(0 0 0 / 6%);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* webite screenshots */
+.vertere .project-img-container {
+    background-image: url(../img/vertere-gs.comdesktop.png);
+}
+.utsfp .project-img-container {
+    background-image: url(../img/usaptayosafp.com.phdesktop.png);
+}
+
+.project-img-container:hover {
+    background-position-y: 100%;
+    transition: 7s ease-out;
+}
+.description {
+    color: #a8b2d1;
+    font-size: 18px;
+    padding: 25px;
+    background-color: #112240;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+.description:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 22px;
+    border-radius: 5px;
+    border: 2px solid #112240;
+    z-index: -9999;
+}
+.works-slider {
+    display: flex;
+    padding-bottom: 150px;
+}
+.project-info {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.website-screenshots-container {
+    width: 55%;
+}
+.text-header {
+    margin-bottom: 60px;
+}
+h2.projectname {
+    margin-bottom: 30px;
+}
+.open-the-site-button i::before {
+    color: #a8b2d1;
+    font-weight: 800;
+    font-family: fontawesome;
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+.open-the-site-button {
+    margin-top: 30px;
+}
+
+/* work list odd */
+.work-list-odd h2.projectname{
+    justify-content: flex-end;
+}
+.work-list-odd .project-info{
+    text-align: right;
+}
+.work-list-odd .description:before {
+    left: 22px;
+}
+.work-list-odd .open-the-site-button i::before {
+    padding-left: 10px;
+}
+.work-list-odd .description {
+    transform: translatex(-22px);
+}
+
+/* work list even */
+.work-list-even h2.projectname{
+    justify-content: flex-start;
+}
+.work-list-even .project-info{
+    text-align: left;
+}
+.work-list-even .description:before {
+    right: 22px;
+}
+.work-list-even .open-the-site-button i::before {
+    padding-right: 10px;
+}
+.work-list-even .description {
+    transform: translatex(22px);
+}
+
+
 
 
 /* Hanging bulb */
